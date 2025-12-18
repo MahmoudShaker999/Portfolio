@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+<title>Mahmoud Ahmed Shaker</title>
+</head>
+<body>
+<div class="grid-2">
+<div class="section-1">
+<img src="{{ url_for('static', filename='profile.jpg') }}" class="profile-pic">
+<h2>Mahmoud Ahmed Shaker</h2>
+<p>Software Engineer</p>
+
+</div>
+
+
+<div class="section-2">
+{% block content %}{% endblock %}
+</div>
+</div>
+</body>
+</html>
